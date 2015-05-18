@@ -1,0 +1,14 @@
+/dist/
+node_modules/
+dist-configs
+.tmp
+.sass-cache
+.idea/
+src/app/styles/*.css
+!src/app/styles/ie8.css
+.DS_Store
+src/app/config.js
+coverage
+test/unit/unit-test-results.html
+*.css.map
+src/app/web.config
