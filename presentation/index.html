@@ -41,7 +41,7 @@
 			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
 				<section>
-					<h2>ECMAScript 6 Harmony</h2>
+					<h3>ECMAScript 6 Harmony</h3>
 					<h3>Adding more good parts to JavaScript</h3>
 				</section>
 				<section>
@@ -54,15 +54,25 @@
 					</ul>
 				</section>
 				<section>
-					<h3>What is ECMAScript</h3>
+					<h3>What is ECMAScript?</h3>
 					<ul>
 						<li>ECMAScript-262 - standard for different dialects of JavaScript</li>
 						<li>JavaScript (Mozilla), JScript (Microsoft), ActionScript (Macromedia)</li>
 					</ul>
-					<blockquote cite="">"ECMAScript was always an unwanted trade name that sounds like a skin disease.” - Brendan Eich</blockquote>
+					<blockquote cite="https://mail.mozilla.org/pipermail/es-discuss/2006-October/000133.html">"ECMAScript was always an unwanted trade name that sounds like a skin disease.” - Brendan Eich</blockquote>
 				</section>
 				<section>
-					<h2>History of ECMAScript</h2>
+					<img src="images/cat.png">
+					<h3>Why should I care about ES6?</h3>
+					<ul>
+						<li class="fragment">You write any JavaScript</li>
+						<li class="fragment">Improve clarity and understandability</li>
+						<li class="fragment">Useful language features</li>
+						<li class="fragment">Reduce bugs</li></ul>
+					</ul>
+				</section>
+				<section>
+					<h3>History of ECMAScript</h3>
 					<ul>
 						<li>1995 - Brendan Eich (Netscape) creates (Mocha -> LiveScript -> JavaScript) in 10 days</li>
 						<li>1996 - 1997 - ECMA-262 Standard (ES1)</li>
@@ -77,11 +87,11 @@
 					</ul>
 				</section>
 				<section>
-					<h2>Support for ES6</h2>
+					<h3>Support for ES6</h3>
 					<ul>
 						<li><strong>Transpilers / Shims</strong>
 							<ul>
-								<li>Babel - 76%</li>
+								<li><strong>Babel - 76%</strong> -> Used for demo</li>
 								<li>Traceur - 60%</li>
 								<li>TypeScript - 24%</li>
 								<li>es6-shim - 20%</li>
@@ -100,13 +110,44 @@
 					</ul>
 				</section>
 				<section>
-					<h2>What the heck is transpiling?</h2>
+					<h3>What the heck is transpiling?</h3>
 					<ul>
 						<li><strong>Compiling</strong> <br>Transforming source code written in one language into another.</li><br>
-						<li><strong>Transpiling</strong> <br>Transforming source code written in one language to another at the same level of abstraction.</li>
+						<li><strong>Transpiling</strong> <br>Transforming source code written in one language to another at the same level of abstraction. Ex. TypeScript, Babel, Traceur, CoffeeScript</li>
 					</ul>
 				</section>
-				<section></section>
+				<section>
+					<img src="images/bullwinkle.png">
+					<h3>Examples: Nothing up my sleeve</h3>
+					<ul>
+						<li>Standard ES6 transpiled by Babel to ES5</li>
+						<li>Setup Babel to transpile:</li>
+
+					<pre><code data-trim contenteditable>
+npm install --global babel
+babel --out-file yourfile-compiled.js yourfile.js</code></pre>
+
+						<li>Let the magic begin!</li>
+					</ul>
+				</section>
+				<section>
+					<h3>Other important features</h3>
+					<ul>
+						<li>Module Loading</li>
+						<li>Promises</li>
+						<li>Math</li>
+					</ul>
+				</section>
+				<section>
+					<h3>Useful resources</h3>
+					<ul>
+						<li>Features overview and comparison - <a href="http://es6-features.org/">http://es6-features.org/</a></li>
+						<li>Learn about features - <a href="https://babeljs.io/docs/learn-es6/">http://es6-features.org/</a></li>
+						<li>Compatibility - <a href="https://kangax.github.io/compat-table/es6/">https://kangax.github.io/compat-table/es6/</a></li>
+						<li>Draft Specification - <a href="http://wiki.ecmascript.org/doku.php?id=harmony:specification_drafts">http://wiki.ecmascript.org/doku.php?id=harmony:specification_drafts</a></li>
+						<li>Short History of JavaScript - <a href="https://www.w3.org/community/webed/wiki/A_Short_History_of_JavaScript">https://www.w3.org/community/webed/wiki/A_Short_History_of_JavaScript</a></li>
+					</ul>
+				</section>
 				<section>
 					<h1>Reveal.js</h1>
 					<h3>The HTML Presentation Framework</h3>
