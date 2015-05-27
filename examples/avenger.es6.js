@@ -12,7 +12,7 @@ class Avenger {
 }
 
 var hulk = new Avenger('Hulk', 'Incredible Strength');
-var ironMan = new Avenger('Iron Man', 'a nice suit')
+var ironMan = new Avenger('Iron Man', 'a nice suit');
 
 hulk.sayHello();
 ironMan.sayHello();
