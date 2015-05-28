@@ -32,7 +32,18 @@ var Avenger = (function () {
         key: 'sayHello',
         value: function sayHello() {
 
-            console.log('Hello my name is ' + this.name + ' and I have the awesome power of ' + this.power);
+            console.log('Hello my name is ' + this.name + ' and I have the awesome power of ' + this.power + '.');
+        }
+    }, {
+        key: 'canFly',
+        value: function canFly() {
+            canFly = true;
+            console.log('' + this.name + ' can fly is ' + canFly);
+
+            if (false) {
+
+                var canFly;
+            }
         }
     }]);
 
@@ -42,9 +53,37 @@ var Avenger = (function () {
 var hulk = new Avenger('Hulk', 'Incredible Strength');
 var ironMan = new Avenger('Iron Man', 'a nice suit');
 
-hulk.sayHello();
-hulk.power = 'I am green';
-ironMan.power = 'Armor';
-ironMan.sayHello();
+var avengers = [hulk, ironMan];
 
-//# sourceMappingURL=avenger-ex3-stringtemplate.es6-compiled.js.map
+avengers.forEach(function (avenger) {
+    avenger.sayHello();
+    avenger.canFly();
+});
+
+var Employee = (function () {
+    function Employee() {
+        _classCallCheck(this, Employee);
+    }
+
+    _createClass(Employee, [{
+        key: 'hire',
+        value: function hire() {
+            this.hired = true;
+        }
+    }, {
+        key: 'getStatus',
+        value: function getStatus() {
+            if (this.hired) {
+                return 'hired';
+            }
+        }
+    }]);
+
+    return Employee;
+})();
+
+var david = new Employee();
+david.hire();
+console.log(david.hired);
+
+//# sourceMappingURL=avenger-ex6-let.es6-compiled.js.map

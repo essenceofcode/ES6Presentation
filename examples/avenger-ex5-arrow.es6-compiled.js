@@ -48,4 +48,4 @@ avengers.forEach(function (avenger) {
     return avenger.sayHello();
 });
 
-//# sourceMappingURL=avenger-ex4-arrow.es6-compiled.js.map
+//# sourceMappingURL=avenger-ex5-arrow.es6-compiled.js.map

@@ -47,4 +47,4 @@ hulk.power = 'I am green';
 ironMan.power = 'Armor';
 ironMan.sayHello();
 
-//# sourceMappingURL=avenger-ex2-getset.es6-compiled.js.map
+//# sourceMappingURL=avenger-ex4-stringtemplate.es6-compiled.js.map
