@@ -13,51 +13,43 @@ var Avenger = (function () {
     }
 
     _createClass(Avenger, [{
-        key: 'name',
-        set: function (name) {
-            this._name = name;
-        },
-        get: function () {
-            return this._name;
-        }
-    }, {
-        key: 'power',
-        set: function (power) {
-            this._power = power;
-        },
-        get: function () {
-            return this._power;
-        }
-    }, {
         key: 'sayHello',
         value: function sayHello() {
+            var additionalPower = arguments[0] === undefined ? 'none on file' : arguments[0];
 
             console.log('Hello my name is ' + this.name + ' and I have the awesome power of ' + this.power + '.');
+            console.log('I have the additional power of ' + additionalPower + '.');
         }
     }, {
-        key: 'canFly',
-        value: function canFly() {
-            canFly = true;
-            console.log('' + this.name + ' can fly is ' + canFly);
-
-            if (false) {
-
-                var canFly;
+        key: 'listAllPowers',
+        value: function listAllPowers() {
+            for (var _len = arguments.length, allPowers = Array(_len), _key = 0; _key < _len; _key++) {
+                allPowers[_key] = arguments[_key];
             }
+
+            allPowers.forEach(function (power) {
+                console.log('' + power);
+            });
+        }
+    }, {
+        key: 'currentLocation',
+        value: function currentLocation(latitude, longitude) {
+
+            console.log('My current location is ' + latitude + ', ' + longitude);
         }
     }]);
 
     return Avenger;
 })();
 
-var hulk = new Avenger('Hulk', 'Incredible Strength');
-var ironMan = new Avenger('Iron Man', 'a nice suit');
+var blackWidow = new Avenger('Black Widow', 'knife expert');
 
-var avengers = [hulk, ironMan];
+blackWidow.sayHello();
 
-avengers.forEach(function (avenger) {
-    avenger.sayHello();
-    avenger.canFly();
-});
+var somePowers = ['explosives', 'interrogation'];
 
-//# sourceMappingURL=avenger-ex6-let.es6-compiled.js.map
+blackWidow.listAllPowers(['assault weapons'].concat(somePowers, ['martial arts']));
+
+blackWidow.currentLocation.apply(blackWidow, [35.916688, -78.639197]);
+
+//# sourceMappingURL=avenger-ex7-default-rest-spread.es6-compiled.js.map

@@ -13,37 +13,10 @@ var Avenger = (function () {
     }
 
     _createClass(Avenger, [{
-        key: 'name',
-        set: function (name) {
-            this._name = name;
-        },
-        get: function () {
-            return this._name;
-        }
-    }, {
-        key: 'power',
-        set: function (power) {
-            this._power = power;
-        },
-        get: function () {
-            return this._power;
-        }
-    }, {
         key: 'sayHello',
         value: function sayHello() {
 
-            console.log('Hello my name is ' + this.name + ' and I have the awesome power of ' + this.power + '.');
-        }
-    }, {
-        key: 'canFly',
-        value: function canFly() {
-            canFly = true;
-            console.log('' + this.name + ' can fly is ' + canFly);
-
-            if (false) {
-
-                var canFly;
-            }
+            console.log('Hello my name is ' + this.name + ' and I have the awesome power of ' + this.power);
         }
     }]);
 
@@ -53,11 +26,9 @@ var Avenger = (function () {
 var hulk = new Avenger('Hulk', 'Incredible Strength');
 var ironMan = new Avenger('Iron Man', 'a nice suit');
 
-var avengers = [hulk, ironMan];
+hulk.sayHello();
+ironMan.sayHello();
+ironMan.power = 'Armor';
+ironMan.sayHello();
 
-avengers.forEach(function (avenger) {
-    avenger.sayHello();
-    avenger.canFly();
-});
-
-//# sourceMappingURL=avenger-ex6-let.es6-compiled.js.map
+//# sourceMappingURL=avenger-ex8-for-of.es6-compiled.js.map

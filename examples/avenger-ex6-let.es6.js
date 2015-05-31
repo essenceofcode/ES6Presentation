@@ -37,20 +37,3 @@ avengers.forEach(avenger => {
     avenger.sayHello();
     avenger.canFly();
 });
-
-class Employee {
-
-    hire() {
-        this.hired = true;
-    }
-
-    getStatus() {
-        if(this.hired) {
-            return "hired";
-        }
-    }
-}
-
-var david = new Employee();
-david.hire();
-console.log(david.hired);
