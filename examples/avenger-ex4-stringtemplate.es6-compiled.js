@@ -29,6 +29,25 @@ var Avenger = (function () {
             return this._power;
         }
     }, {
+        key: 'droids',
+        value: function droids(strings) {
+            for (var _len = arguments.length, values = Array(_len > 1 ? _len - 1 : 0), _key = 1; _key < _len; _key++) {
+                values[_key - 1] = arguments[_key];
+            }
+
+            strings.forEach(function (string) {
+
+                console.log(string);
+            });
+
+            values.forEach(function (value) {
+
+                console.log(value);
+            });
+
+            return 'This is not the string you were looking for...';
+        }
+    }, {
         key: 'sayHello',
         value: function sayHello() {
 

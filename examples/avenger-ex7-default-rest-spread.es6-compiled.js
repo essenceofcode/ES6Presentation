@@ -46,6 +46,8 @@ var blackWidow = new Avenger('Black Widow', 'knife expert');
 
 blackWidow.sayHello();
 
+blackWidow.listAllPowers('awe', 'so', 'me', 'ness');
+
 var somePowers = ['explosives', 'interrogation'];
 
 blackWidow.listAllPowers(['assault weapons'].concat(somePowers, ['martial arts']));

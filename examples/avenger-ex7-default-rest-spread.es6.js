@@ -14,7 +14,8 @@ class Avenger {
 
     listAllPowers(...allPowers){
 
-        allPowers.forEach(power => { console.log(`${power}`); });
+        allPowers.forEach(power => {
+            console.log(`${power}`); });
     }
 
     currentLocation(latitude, longitude){
@@ -27,9 +28,10 @@ let blackWidow = new Avenger('Black Widow', 'knife expert');
 
 blackWidow.sayHello();
 
+blackWidow.listAllPowers('awe', 'so', 'me', 'ness');
+
 let somePowers = ['explosives', 'interrogation'];
 
 blackWidow.listAllPowers(['assault weapons', ...somePowers, 'martial arts']);
 
 blackWidow.currentLocation(...[35.916688, -78.639197]);
-
